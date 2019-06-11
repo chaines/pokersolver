@@ -34,7 +34,8 @@ class Hand {
             return new Card(c);
         });
         this.cards = this.cards.sort(Card.sort);
-        this.makeHand();
+        if(this.cards.length > 0)
+            this.makeHand();
     }
 
     makeHand() {
