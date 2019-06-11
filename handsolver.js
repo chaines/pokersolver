@@ -65,6 +65,9 @@ class Hand {
     }
 
     static compare(a, b) {
+        if(a.cards.length == 0 || b.cards.length == 0) {
+            return null;
+        }
         if(a.value > b.value) {
             return 1;
         } else if(b.value > a.value) {
