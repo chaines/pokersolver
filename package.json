@@ -3,16 +3,17 @@
     "description": "javascript poker hand solver",
     "author": "Cody Haines <chaines51@gmail.com>",
     "main": "handsolver.js",
+    "type": "module",
     "devDependencies": {
         "@babel/core": "^7.4.5",
         "@babel/preset-env": "^7.4.5",
-        "ava": "^2.1.0",
         "babel-jest": "^24.8.0",
-        "jest": "^24.8.0",
-        "mocha": "^6.1.4",
-        "should": "^13.2.3"
+        "jest": "^24.8.0"
     },
     "scripts": {
         "test": "ava"
+    },
+    "dependencies": {
+        "promise.any": "^2.0.1"
     }
 }
